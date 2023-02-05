@@ -59,7 +59,7 @@ social-network-links:
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #   instagram: "federico.fulgeri"
-# spotify: spartanfu
+  spotify: spartanfu
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
@@ -92,7 +92,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "fedeful.github.io"
+url-pretty: "Federico's Blog"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
