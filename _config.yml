@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: "Federico's Blog"
 
 # Your name to show in the footer
-author: Some Person
+author: Federico Fulgeri
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -62,7 +62,7 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+   instagram: federico.fulgeri
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
