@@ -2,8 +2,6 @@
 layout: post
 title: Trekking Carega
 subtitle: Trekking Carega primavera/estate/autunno
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [trekking veneto WWI dolomiti alpi]
 comments: true
 ---
