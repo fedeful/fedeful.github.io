@@ -13,4 +13,5 @@ comments: true
                    
 Descizione del trekking e [info tempi e traccia](https://www.vienormali.it/montagna/cima_scheda.asp?cod=3024)
 
-NB: ancora da fare.
+{: .box-warning}
+**Idee:** uscite 2023.
