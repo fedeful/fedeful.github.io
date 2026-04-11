@@ -10,41 +10,6 @@ subtitle: "I write code, break things, then hike to clear my head. Professional 
   <input id="post-search" type="text" placeholder="Search posts…" autocomplete="off">
 </div>
 
-<!-- ── Featured carousel ── -->
-{% assign featured = site.posts | limit: 4 %}
-<div id="fc" class="carousel carousel-fade slide" data-ride="carousel" data-interval="6000">
-
-  <ol class="carousel-indicators">
-    {% for p in featured %}
-    <li data-target="#fc" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
-    {% endfor %}
-  </ol>
-
-  <div class="carousel-inner">
-    {% assign aclasses = "ac0,ac1,ac2,ac3" | split: "," %}
-    {% for p in featured %}
-    <div class="carousel-item{% if forloop.first %} active{% endif %} fc-slide {{ aclasses[forloop.index0] }}">
-      <div class="fc-body">
-        <div class="fc-meta">{{ p.date | date: "%b %-d, %Y" }}</div>
-        <h2 class="fc-title">{{ p.title }}</h2>
-        {% if p.subtitle %}<p class="fc-sub">{{ p.subtitle }}</p>{% endif %}
-        <div class="fc-tags">
-          {% for t in p.tags limit: 3 %}<span class="fc-tag">{{ t }}</span>{% endfor %}
-        </div>
-        <a href="{{ p.url | absolute_url }}" class="fc-btn">Read &rarr;</a>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-
-  <a class="carousel-control-prev" href="#fc" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#fc" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-
 <!-- ── Tag filter ── -->
 <div id="tag-bar">
   <span class="tag-bar-label">Filter:</span>
@@ -79,85 +44,6 @@ subtitle: "I write code, break things, then hike to clear my head. Professional 
   background: #fff;
 }
 
-/* ── Carousel ── */
-.carousel { margin: 0 -15px 2rem -15px; }
-
-.fc-slide {
-  background: #0f172a;
-  min-height: 240px;
-  display: flex;
-  align-items: center;
-  border-top: 3px solid #0085A1;
-}
-.fc-slide.ac1 { border-top-color: #16a34a; }
-.fc-slide.ac2 { border-top-color: #dc2626; }
-.fc-slide.ac3 { border-top-color: #7c3aed; }
-
-.fc-body {
-  padding: 2rem 3.5rem;
-  max-width: 640px;
-}
-
-.fc-meta {
-  color: rgba(255,255,255,0.4);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
-.fc-title {
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.4rem;
-}
-
-.fc-sub {
-  color: rgba(255,255,255,0.6);
-  font-size: 0.93rem;
-  line-height: 1.5;
-  margin-bottom: 0.8rem;
-}
-
-.fc-tags { margin-bottom: 1.1rem; }
-
-.fc-tag {
-  display: inline-block;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  padding: 0.15rem 0.6rem;
-  border-radius: 20px;
-  margin-right: 0.3rem;
-  opacity: 0.85;
-}
-
-.fc-btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff !important;
-  padding: 0.42rem 1.3rem;
-  border-radius: 20px;
-  font-size: 0.83rem;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: opacity 0.15s, transform 0.15s;
-}
-.fc-btn:hover { opacity: 0.85; transform: translateY(-1px); }
-
-.carousel-indicators li {
-  width: 7px; height: 7px;
-  border-radius: 50%; border: none;
-  background: rgba(255,255,255,0.3);
-  margin: 0 3px;
-}
-.carousel-indicators .active { background: #fff; }
-
 /* ── Tag filter ── */
 #tag-bar {
   display: flex;
@@ -188,21 +74,14 @@ subtitle: "I write code, break things, then hike to clear my head. Professional 
   font-style: italic;
   margin: 1rem 0 2rem;
 }
-
-/* ── Responsive ── */
-@media (max-width: 576px) {
-  .fc-body  { padding: 1.5rem 1.5rem; }
-  .fc-title { font-size: 1.25rem; }
-  .fc-slide { min-height: 200px; }
-}
 </style>
 
 <p id="no-results">No posts found.</p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var posts    = Array.from(document.querySelectorAll('.post-preview'));
-  var tagSet   = new Set();
+  var posts     = Array.from(document.querySelectorAll('.post-preview'));
+  var tagSet    = new Set();
   var activeTag = 'all';
   var searchQ   = '';
 
