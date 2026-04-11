@@ -1,5 +1,69 @@
 ---
 layout: home
-title: Fede
-subtitle: "Analytical mind, curious heart. Developer by day, thinker by night — still figuring out the chaos in between."
+title: Fork & Trail
+subtitle: "I write code, break things, then hike to clear my head. Professional problem solver, occasional problem creator — this blog is the evidence."
 ---
+
+<div id="tag-filter-section" style="margin-bottom: 2rem;">
+  <div id="tag-filter-buttons" style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+    <span style="font-weight: 600; margin-right: 0.25rem; color: #555;">Filter:</span>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var posts = document.querySelectorAll('.post-preview');
+  var tagSet = new Set();
+
+  posts.forEach(function (post) {
+    post.querySelectorAll('.blog-tags a').forEach(function (a) {
+      tagSet.add(a.textContent.trim());
+    });
+  });
+
+  if (tagSet.size === 0) return;
+
+  var container = document.getElementById('tag-filter-buttons');
+
+  function makeBtn(label, tag, active) {
+    var btn = document.createElement('button');
+    btn.textContent = label;
+    btn.dataset.tag = tag;
+    btn.className = 'btn btn-sm ' + (active ? 'btn-primary' : 'btn-outline-secondary');
+    btn.style.cssText = 'border-radius: 20px; font-size: 0.82rem;';
+    return btn;
+  }
+
+  var allBtn = makeBtn('All', 'all', true);
+  container.appendChild(allBtn);
+
+  Array.from(tagSet).sort().forEach(function (tag) {
+    container.appendChild(makeBtn(tag, tag, false));
+  });
+
+  container.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-tag]');
+    if (!btn) return;
+
+    var selected = btn.dataset.tag;
+
+    container.querySelectorAll('button').forEach(function (b) {
+      b.className = 'btn btn-sm btn-outline-secondary';
+      b.style.cssText = 'border-radius: 20px; font-size: 0.82rem;';
+    });
+    btn.className = 'btn btn-sm btn-primary';
+    btn.style.cssText = 'border-radius: 20px; font-size: 0.82rem;';
+
+    posts.forEach(function (post) {
+      if (selected === 'all') {
+        post.style.display = '';
+        return;
+      }
+      var postTags = Array.from(post.querySelectorAll('.blog-tags a')).map(function (a) {
+        return a.textContent.trim();
+      });
+      post.style.display = postTags.includes(selected) ? '' : 'none';
+    });
+  });
+});
+</script>
