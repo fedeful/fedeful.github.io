@@ -23,7 +23,9 @@ navbar-links:
   About Me: "aboutme"
   Portfolio: "portfolio"
   Resources:
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Tech: "tech"
+    - Trekking: "trekking"
+    - Pensieri: "thoughts"
 
 ################
 # --- Logo --- #
