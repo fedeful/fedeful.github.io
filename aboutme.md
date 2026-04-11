@@ -4,9 +4,10 @@ title: About me
 subtitle: Pragmatic Developer with a focus on local-first mobile solutions
 ---
 
-### Mobile Developer | Outdoor & Functional Training Enthusiast
+### Software Engineer | Outdoor & Tech Enthusiast
 
-Professional developer focused on local-first mobile solutions and efficient, hardware-centric testing. I balance technical precision with a disciplined, outdoor-driven lifestyle.
+Professional developer focused on python solutions and efficient, hardware-centric testing. 
+I balance technical precision with a disciplined, outdoor-driven lifestyle.
 
 ---
 
