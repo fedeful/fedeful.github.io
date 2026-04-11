@@ -1,52 +1,57 @@
 ---
 layout: page
-title: About me
-subtitle: Pragmatic Developer with a focus on local-first mobile solutions
+title: About Me
+subtitle: Code, mountains, and the discipline to do both well
 ---
 
-### Software Engineer | Outdoor & Tech Enthusiast
+I'm **Federico Fulgeri** — a software engineer based in Italy, somewhere between a terminal prompt and a mountain trail.
 
-Professional developer focused on python solutions and efficient, hardware-centric testing. 
-I balance technical precision with a disciplined, outdoor-driven lifestyle.
-
----
-
-## 💻 Technical Profile
-
-- **Local Development:** Specialized in local builds and direct device deployment (sideloading).
-- **Environment:** High-frequency testing on physical hardware (Android/iOS) to ensure real-world performance.
-- **Workflow:** Rapid prototyping and iterative debugging outside the constraints of official app stores.
-
-## 🌲 Lifestyle & Performance
-
-- **Outdoor Training:** I prioritize functional bodyweight exercises (Calisthenics) performed in outdoor environments.
-- **Physical Discipline:** Focused on daily high-frequency toning and core stability.
-- **Methodology:** A "Quality over Quantity" approach applied to both code architecture and physical reps.
+I build Python tools and mobile solutions during the week. On weekends I disappear into the Prealpi Venete or the Dolomites with a backpack and no signal. Both habits share the same core: break the problem down, move deliberately, keep going.
 
 ---
 
-## 🛠 Skills & Interests
+## What I do
 
-| Category | focus |
-| :--- | :--- |
-| **Development** | Local Deployment, Mobile Frameworks, Sideloading, APK/IPA Debugging |
-| **Athletics** | Functional Toning, Bodyweight Mastery, High-Frequency Training |
-| **Mindset** | Autonomous Learning, Outdoor Performance, System Optimization |
+### Programming
+
+My daily work lives at the intersection of **Python development**, **local mobile deployment**, and **DevOps tooling**.
+
+- Build and debug scripts for test automation and device workflows
+- Deploy and sideload applications directly on Android/iOS hardware — no app store, no middleman
+- Work with **Docker**, **Helm**, and **Kubernetes** for containerised pipelines
+- Rapid prototyping: get something running fast, then harden it
+
+I prefer local builds and physical device testing over emulators. Real hardware catches real bugs.
+
+### Trekking & Outdoor
+
+The Veneto and Trentino mountains are my second office. Routes I've walked and keep going back to:
+
+- **Monte Pasubio** — Strada delle 52 Gallerie (history carved in rock)
+- **Cima Carega** — Sentiero delle Creste (ridge walks above 2000 m)
+- **Altopiano di Asiago** — quiet forests, WWI history everywhere
+- **Pale di San Martino** — Dolomites at their most dramatic
+
+Gear philosophy: bring what you need, nothing more. A good map, a headlamp, and water beat any gadget.
+
+### Calisthenics
+
+Daily bodyweight training, mostly outdoors. No gym membership, no machines — parallel bars, pull-up bars, rings.
+
+The approach is simple: high frequency, controlled movement, patience. Same mindset I apply to code.
 
 ---
 
-## 📈 Current Status
+## What I believe
 
-- 🛠 **Project:** Optimizing local mobile deployment workflows.
-- 🏋️ **Training:** Daily functional bodyweight routine for muscle density.
-- 🔭 **Goal:** Scaling local-first apps into robust, high-performance tools.
+> "Precision in code, discipline in life."
+
+I think the best systems — software or physical — are the ones that work reliably in adverse conditions. That's what I aim for in both domains.
 
 ---
 
-## 📫 Contact
+## Let's connect
 
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email:** [your.email@example.com](mailto:your.email@example.com)
+Find me on [GitHub](https://github.com/fedeful), [LinkedIn](https://linkedin.com/in/federico-fulgeri-3419a0176), or [Instagram](https://instagram.com/federicofulgeri).
 
-> *"Precision in code, discipline in life."*
+If you want to talk Python, sideloading, or mountain routes in the Veneto — reach out.

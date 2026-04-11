@@ -21,6 +21,7 @@ author: Federico Fulgeri
 
 navbar-links:
   About Me: "aboutme"
+  Portfolio: "portfolio"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
 
