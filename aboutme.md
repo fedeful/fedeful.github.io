@@ -1,16 +1,51 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Pragmatic Developer with a focus on local-first mobile solutions
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Mobile Developer | Outdoor & Functional Training Enthusiast
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Professional developer focused on local-first mobile solutions and efficient, hardware-centric testing. I balance technical precision with a disciplined, outdoor-driven lifestyle.
 
-What else do you need?
+---
 
-### My story
+## 💻 Technical Profile
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- **Local Development:** Specialized in local builds and direct device deployment (sideloading).
+- **Environment:** High-frequency testing on physical hardware (Android/iOS) to ensure real-world performance.
+- **Workflow:** Rapid prototyping and iterative debugging outside the constraints of official app stores.
+
+## 🌲 Lifestyle & Performance
+
+- **Outdoor Training:** I prioritize functional bodyweight exercises (Calisthenics) performed in outdoor environments.
+- **Physical Discipline:** Focused on daily high-frequency toning and core stability.
+- **Methodology:** A "Quality over Quantity" approach applied to both code architecture and physical reps.
+
+---
+
+## 🛠 Skills & Interests
+
+| Category | focus |
+| :--- | :--- |
+| **Development** | Local Deployment, Mobile Frameworks, Sideloading, APK/IPA Debugging |
+| **Athletics** | Functional Toning, Bodyweight Mastery, High-Frequency Training |
+| **Mindset** | Autonomous Learning, Outdoor Performance, System Optimization |
+
+---
+
+## 📈 Current Status
+
+- 🛠 **Project:** Optimizing local mobile deployment workflows.
+- 🏋️ **Training:** Daily functional bodyweight routine for muscle density.
+- 🔭 **Goal:** Scaling local-first apps into robust, high-performance tools.
+
+---
+
+## 📫 Contact
+
+- **GitHub:** [github.com/yourusername](https://github.com/yourusername)
+- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Email:** [your.email@example.com](mailto:your.email@example.com)
+
+> *"Precision in code, discipline in life."*
