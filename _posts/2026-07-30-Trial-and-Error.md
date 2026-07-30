@@ -4,6 +4,8 @@ title: Trial and Error
 subtitle: The trade-off between preparation and just going for it, in sport and at work
 tags: [thoughts, life, sport]
 comments: true
+lang: en
+ref: trial-and-error
 ---
 
 There's a moment, right before any serious attempt, when preparation stops helping and starts being an excuse.

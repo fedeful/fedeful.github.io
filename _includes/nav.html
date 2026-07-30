@@ -38,6 +38,23 @@
           </a>
         </li>
       {%- endif -%}
+      {%- assign current_lang = page.lang | default: "en" -%}
+      {%- if current_lang == "it" -%}
+        {%- assign alt_lang = "en" -%}
+        {%- assign alt_url = "/" -%}
+      {%- else -%}
+        {%- assign alt_lang = "it" -%}
+        {%- assign alt_url = "/it/" -%}
+      {%- endif -%}
+      {%- if page.ref -%}
+        {%- assign translation = site.posts | where: "ref", page.ref | where_exp: "post", "post.lang != current_lang" | first -%}
+        {%- if translation -%}
+          {%- assign alt_url = translation.url -%}
+        {%- endif -%}
+      {%- endif -%}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ alt_url | relative_url }}" title="{% if alt_lang == 'it' %}Leggi in italiano{% else %}Read in English{% endif %}">{{ alt_lang | upcase }}</a>
+      </li>
     </ul>
   </div>
 
