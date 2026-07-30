@@ -21,11 +21,6 @@ author: Federico Fulgeri
 
 navbar-links:
   About Me: "aboutme"
-  Portfolio: "portfolio"
-  Resources:
-    - Tech: "tech"
-    - Trekking: "trekking"
-    - Pensieri: "thoughts"
 
 ################
 # --- Logo --- #
