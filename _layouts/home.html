@@ -5,11 +5,7 @@ layout: page
 {{ content }}
 
 {% assign page_lang = page.lang | default: "en" %}
-{% if page_lang == "en" %}
-  {% assign posts = site.posts | where_exp: "post", "post.lang == nil or post.lang == 'en'" %}
-{% else %}
-  {% assign posts = site.posts | where: "lang", page_lang %}
-{% endif %}
+{% assign posts = site.posts | where: "lang", page_lang %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
